@@ -40,11 +40,10 @@
 
 ## 项目结构
 
-/contracts       # 智能合约源码（Solidity）
-/hardhat         # Hardhat配置、测试用例
-/backend         # Go+Gin后端服务
-/frontend        # React前端DApp
-/docker          # Docker配置文件
-/docker-compose.yml  # 容器化部署配置
+```
+/contract               # 智能合约源码（Solidity）
+/backend                # Go+Gin后端服务
+/frontend               # React前端DApp
+```
 
 
