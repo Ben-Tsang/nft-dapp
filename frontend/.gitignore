@@ -1,0 +1,61 @@
+# -----------------------------
+# Logs
+# -----------------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------
+# Node modules
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Build / Distribution
+# -----------------------------
+dist/
+dist-ssr/
+build/
+.bundle/
+.cache/
+*.tsbuildinfo
+
+# -----------------------------
+# Environment / sensitive config
+# -----------------------------
+.env
+.env.local
+.env.*.local
+.env.production
+.env.production.local
+.env.development.local
+
+# -----------------------------
+# Editor / IDE files
+# -----------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# -----------------------------
+# OS / system files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Coverage / testing
+# -----------------------------
+coverage/
+.nyc_output/

@@ -1,0 +1,16 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+# 在 Windows 下，明确生成 .exe
+cmd = "go build -o ./tmp/gormlab-server.exe ./cmd/server"
+entrypoint = "tmp/gormlab-server.exe"
+
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_dir = ["tmp", "vendor", "node_modules"]
+
+[log]
+time = true
+
+[screen]
+clear_on_rebuild = true

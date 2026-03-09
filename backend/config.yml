@@ -1,0 +1,71 @@
+
+app:
+  name: "nft_backend"
+  env: "dev"
+  httpPort: 8080
+
+db:
+  host: "127.0.0.1"
+  port: 5432
+  user: "postgres"
+  password: "123456"
+  name: "questboard"
+  sslmode: "disable"
+  timezone: "Asia/Shanghai"
+
+mq:
+  host: "127.0.0.1"
+  port: 5672
+  user: "guest"
+  password: "guest"
+  vhost: "/"
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "123456"
+
+# 多链核心配置：key为链标识（如eth_sepolia/bsc_test），值为链+合约配置
+chains:
+  # hardhat测试网
+  hardhat:
+    enable: false
+    # 链基础配置（独立隔离，与其他链无关联）
+    basic:
+      chain_id: 31337
+      rpc_url: "http://localhost:8545"
+      timeout: 30
+      start_block: 0
+      # 校正定时表达式
+      correct_cron: "*/10 * * * * *"
+    # 该链下的专属合约
+    contracts:
+      - name: "NFT"
+        address: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+        abiPath: "internal/blockchain/contract/abi/NFT.json"
+        handler: "nft"
+      - name: "NFTMarket"
+        address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+        abiPath: "internal/blockchain/contract/abi/NFTMarket.json"
+        handler: "market"
+  # sepolia测试网
+  sepolia:
+    enable: true
+    # 链基础配置（独立隔离，与其他链无关联）
+    basic:
+      chain_id: 11155111
+      rpc_url: "https://sepolia.drpc.org"
+      timeout: 30
+      start_block: 0
+      # 校正定时表达式
+      correct_cron: "*/10 * * * * *"
+    # 该链下的专属合约
+    contracts:
+      - name: "NFT"
+        address: "0x3c7399e7d783709f0Acc1A6D811b80B37f2Cb031"
+        abiPath: "internal/blockchain/contract/abi/NFT.json"
+        handler: "nft"
+      - name: "NFTMarket"
+        address: "0x3c04de0815bd05640502937EBaCB837BD59B810E"
+        abiPath: "internal/blockchain/contract/abi/NFTMarket.json"
+        handler: "market"

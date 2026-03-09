@@ -1,0 +1,59 @@
+# -----------------------------
+# Go build / binaries
+# -----------------------------
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build output directories
+/bin/
+/build/
+/dist/
+
+# -----------------------------
+# Environment / sensitive config
+# -----------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+debug.log
+
+# -----------------------------
+# IDE / Editor files
+# -----------------------------
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# -----------------------------
+# OS / System files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Docker / container files
+# -----------------------------
+docker-compose.override.yml
+*.env.docker
+
+# -----------------------------
+# Go modules cache
+# -----------------------------
+/vendor/

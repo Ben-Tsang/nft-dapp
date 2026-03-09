@@ -1,0 +1,59 @@
+# -----------------------------
+# Node modules
+# -----------------------------
+/node_modules
+
+# -----------------------------
+# Compilation output
+# -----------------------------
+/dist
+/bundle
+
+# -----------------------------
+# Hardhat build artifacts
+# -----------------------------
+/artifacts
+/cache
+/types
+/coverage
+
+# -----------------------------
+# Environment variables
+# -----------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------
+# Logs
+# -----------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# -----------------------------
+# OS / IDE temporary files
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------
+# TypeScript compiled
+# -----------------------------
+*.tsbuildinfo
+
+# -----------------------------
+# Hardhat coverage / cache
+# -----------------------------
+/coverage
+/.nyc_output
