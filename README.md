@@ -4,6 +4,12 @@
 本项目是一个基于Web3技术栈开发的NFT发行与交易全栈平台，支持NFT铸造、上架、下架、改价、购买等核心功能，实现链上合约与链下服务的数据同步。
 
 项目定位：Web3全栈DApp，覆盖智能合约开发、后端服务、前端交互、工程化部署全流程，适配MetaMask钱包，支持IPFS存储。
+<img width="2559" height="1229" alt="image" src="https://github.com/user-attachments/assets/d4412caa-fc6b-4aca-8eeb-723bf7c0344c" />
+<img width="2561" height="1347" alt="image" src="https://github.com/user-attachments/assets/499ec0bf-4cba-4e07-a91c-51acfc471a11" />
+<img width="2561" height="1347" alt="image" src="https://github.com/user-attachments/assets/deaac946-7c23-410a-8cec-605f3054addd" />
+<img width="2559" height="1229" alt="image" src="https://github.com/user-attachments/assets/706f61c3-8b2c-4793-ac7e-36f6187d76a0" />
+<img width="2561" height="1347" alt="image" src="https://github.com/user-attachments/assets/df755421-ecd7-40c8-ad0d-cdea054cde2b" />
+
 
 ## 技术栈
 
